@@ -2,12 +2,15 @@
   <div class="container">
       <div class="card  mt-4 text-right"  v-for="item in getNews">
   <div class="card-header" style="background-color: rgb(255, 218, 218)">
-  Yazar : {{item.newsAuthor}} / {{item.newsDate}}    <span class=" mx-5"><button @click="increaseLike(item)" class="btn btn-sm btn-warning">Beğen</button></span>
+  <span class="">Yazar : {{item.newsAuthor}} / {{item.newsDate}}    </span>
+  <span class=" mx-5"><button @click="increaseLike(item)" class="btn btn-sm btn-warning">Beğen</button></span>
   </div>
-  <div class="card-body">
+  <div class="card-body text-center">
     <h5 class="card-title">{{item.newsTitle}}</h5>
     <p class="card-text">{{item.newsMiniDesc}}</p>
-    <router-link tag="button" :to="'news/'+item.id" class="btn text-white" style="background-color: rgb(223, 118, 118)">Devamını Oku..</router-link>
+    <div class="text-right">
+    <router-link tag="button" :to="'news/'+item.id" class="btn text-white " style="background-color: rgb(223, 118, 118)">Devamını Oku..</router-link>
+    </div>
   </div>
   <div class="card-footer text-muted" style="background-color: rgb(255, 218, 218)">
    {{item.NewsReadingTime}} Dakikalık Okuma Süresi / {{item.NewsComment}} Yorum {{item.newsLike}} Beğeni

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import {router} from  '../../router'
 const state= {
     news:[]
 }
@@ -16,6 +17,7 @@ const mutations= {
     saveNewsProject(state,payload){
          state.news.push(payload)
          console.log(state.news)
+         router.replace('/')
     }
 }
 const actions= {
