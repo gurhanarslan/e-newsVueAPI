@@ -1,6 +1,7 @@
 <template>
 <div>
-  <div class="text-center">## TASARIM İLE UĞRAŞMADIM BURADAKİ AMACIM API'YE DATA EKLEMEK,TÜM DATAYI ÇEKMEK VE HABERİN ÖZEL DATASINI ÇEKMEK </div>
+  <div class="text-center">## TASARIM İLE UĞRAŞMADIM BURADAKİ AMACIM API'YE DATA EKLEMEK,TÜM DATAYI ÇEKMEK VE HABERİN ÖZEL DATASINI ÇEKMEK <br>
+  Projeyi Install edip incelediyseniz Beğen butonuna basar mısınız :)</div>
     <app-header></app-header>
   <transition enter-active-class="animated fadeIn" mode="out-in" leave-active-class="animated fadeOut">
       <router-view></router-view>

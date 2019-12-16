@@ -36,6 +36,10 @@ const actions= {
             payload.id=response.data.name
             commit('saveNewsProject',payload)
         })
+    },
+    putNews({commit},payload){
+        console.log(payload)
+        Vue.http.put('https://vue-blog-bae64.firebaseio.com/news/'+payload.id+'.json',payload)
     }
 }
 

@@ -9,11 +9,13 @@
            {{item.NewsReadingTime}} Dakikalık Okuma Süresi / {{item.newsDate}}
             <cite title="Beğeni Yorum Sayısı">{{item.newsLike}} Beğeni / {{item.NewsComment}} Yorum</cite>
           </footer>
-        
+        {{item.newsTags}}
 
             </blockquote>
       </div>
     </div>
+
+
   </div>
 </template>
 
@@ -26,7 +28,9 @@ export default {
       news: []
     };
   },
-  computed: {},
+  computed: {
+    
+  },
   created() {
     this.news = this.$store.getters.getNewsOne(this.id);
     console.log("createddetails");
